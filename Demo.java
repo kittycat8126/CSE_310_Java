@@ -18,6 +18,16 @@ public class Demo {
         //if you want to access the static variables inside the main or any other class you have to use class name in which the variable is decealred
         System.out.println(test.j);
         t1.show();
+
+        //now lets take two objects
+        test t2 = new test();
+        test t3 = new test();
+        System.out.println("t2 x : "+ t2.x);
+        System.out.println("t2 y : "+ t2.y);
+        System.out.println("t3 x : "+ t3.x);
+        System.out.println("t3 y : "+ t3.y);
+        t2.x = 100;
+        t2.y = 200;
     }
 }
 
