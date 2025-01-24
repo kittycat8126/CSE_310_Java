@@ -27,8 +27,7 @@ public class day2 {
         int b = 234;
         int c = 34;
 
-        System.out.println(a<b && a<c ? a : b<c ? b : c);
-
+        System.out.println("smallest is  : " + (a<b && a<c ? a : b<c ? b : c));
     }   
 }
 
