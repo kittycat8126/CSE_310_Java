@@ -5,16 +5,14 @@ public class twoDarray {
         System.out.println("Enter the number of columns: ");
         Scanner r = new Scanner(System.in);
         int rows = r.nextInt();
-        Scanner c = new Scanner(System.in);
-        int cols = c.nextInt();
+        int cols = r.nextInt();
         int m[][] = new int[rows][cols];
         for(int i = 0;i<rows;i++)
         {
             for(int j = 0;j<cols;j++)
             {
                 System.out.println("Enter the element at position "+i+","+j+": ");
-                Scanner e = new Scanner(System.in);
-                m[i][j] = e.nextInt();
+                m[i][j] = r.nextInt();
             }
         }
         System.out.println("The matrix is: ");
@@ -23,6 +21,17 @@ public class twoDarray {
             for(int j = 0;j<cols;j++)
             {
                 System.out.print(m[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+        //transpose of the matrix
+        System.out.println("The transpose of the matrix is: ");
+        for(int i = 0;i<cols;i++)
+        {
+            for(int j = 0;j<rows;j++)
+            {
+                System.out.print(m[j][i]+" ");
             }
             System.out.println();
         }
