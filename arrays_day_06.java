@@ -1,9 +1,21 @@
+import java.util.Scanner;
+
 public class arrays_day_06 {
     public static void main(String[] args) {
-        double [] marks = {12.3,45.6,78.9,34.54,35.6,13.9};
-        for(double i : marks)
+        System.out.println("Enter the number of subjects: ");
+        Scanner n = new Scanner(System.in);
+        int nos = n.nextInt();
+        double[] marks = new double[nos];
+        for(int i = 0;i <nos;i++)
         {
-            System.out.print(i+" ");
+            System.out.println("Enter the marks of subject "+(i+1)+": ");
+            Scanner m = new Scanner(System.in);
+            marks[i] = m.nextDouble();
+        }
+        //printing marks
+        System.out.println("Your marks are : ");
+        for (double d : marks) {
+            System.out.print(d+" , ");
         }
     }    
 }
