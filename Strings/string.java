@@ -4,6 +4,7 @@ class string
         String a = "Aswin";
         String b = "Kumar";
         String c = "Aswin";
-        System.out.println(a + "," + b);
+        System.out.println(a + "," + b + "," + c);
+        System.out.println(a.length()); 
     }
 }
